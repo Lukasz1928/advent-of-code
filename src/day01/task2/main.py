@@ -1,0 +1,1 @@
+print(sum((lambda f: (lambda x: f(lambda v: x(x)(v)))(lambda x: f(lambda v: x(x)(v))))(lambda f: (lambda i: 0 if (i // 3 - 2 <= 0) else i // 3 - 2 + f(i // 3 - 2)))(int(line)) for line in open('input', 'r')))
