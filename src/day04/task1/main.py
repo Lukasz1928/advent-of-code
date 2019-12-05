@@ -1,0 +1,2 @@
+low, high = (int(x) for x in open('input', 'r').read().split('-'))
+print(sum([all(int(x) >= int(y) for ix, x in enumerate(str(p)) for iy, y in enumerate(str(p)) if ix > iy) and any(str(p)[i] == str(p)[i + 1] for i in range(len(str(p)) - 1)) for p in range(low, high)]))
