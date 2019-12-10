@@ -5,8 +5,11 @@ def task_solved(year, day, task):
     task_path = '{}/day{}/task{}'.format(year, str(day).zfill(2), task)
     if not os.path.isdir(task_path):
         return False
-    if 'main.py' not in os.listdir(task_path):
+    if 'solution' not in os.listdir(task_path):
         return False
+    with open('{}/solution'.format(task_path)) as f:
+        if len(f.read()) == 0:
+            return False
     return True
 
 
