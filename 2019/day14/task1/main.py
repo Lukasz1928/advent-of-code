@@ -28,9 +28,6 @@ class Reaction:
     def produces(self, chem):
         return chem in self.produced_quantities.keys()
 
-    def __str__(self):
-        return ','.join([str(x) for x in self.required_quantities.items()]) + " => " + str(self.produced_quantities.items())
-
 
 def previous(reactions, chem):
     return [r for r in reactions if r.produces(chem)][0]
@@ -51,7 +48,6 @@ required = {('FUEL', 1)}
 leftovers = defaultdict(lambda: 0)
 while len({x for x in required if x[0] != 'ORE'}) != 0:
     new_required = []
-    #print(required, leftovers)
     for req in required:
         if req[0] != 'ORE':
             reaction = [r for r in reactions if r.produces(req[0])][0]
@@ -69,5 +65,7 @@ while len({x for x in required if x[0] != 'ORE'}) != 0:
         else:
             new_required.append(req)
     required = to_set(new_required)
-print(list(required)[0][1])
 
+ore_collected = 1000000000000
+main_produced = ore_collected // list(required)[0][1]
+leftover_produced = 0 # TODO
