@@ -338,7 +338,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
-			<td>&#x2717</td>
+			<td>&#x2713</td>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
