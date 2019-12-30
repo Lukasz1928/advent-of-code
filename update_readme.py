@@ -17,8 +17,8 @@ def task_sign(year, day, task):
     return "&#x2713" if task_solved(year, day, task) else "&#x2717"
 
 
-def generate_table():
-    table = '<table>\n<thead>\n\t<tr>\n\t\t<td rowspan="2">Day/Task</th>\n'
+def generate_solution_checklist_table():
+    table = 'Task checklist:<table>\n<thead>\n\t<tr>\n\t\t<td rowspan="2">Day/Task</th>\n'
     for i in range(1, 26):
         table += '\t\t<td colspan="2" style="text-align:center;">{}</td>\n'.format(str(i).zfill(2))
     table += '\t</tr>\n\t<tr>\n'
@@ -38,9 +38,25 @@ def generate_table():
     return table
 
 
+def generate_languages_table():
+    languages = {
+        '2015': '?',
+        '2016': '?',
+        '2017': '?',
+        '2018': '?',
+        '2019': 'Python'
+    }
+    table = '<br>Languages used:\n<table>\n<tbody>\n'
+    for y, l in languages.items():
+        table += '\t<tr>\n\t\t<td>{}</td>\n\t\t<td>{}</td>\n\t</td>'.format(y, l)
+    table += '</tbody>\n</table>'
+    return table
+
+
 def main():
     text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks."
-    text += generate_table()
+    text += generate_languages_table()
+    text += generate_solution_checklist_table()
     text += "\n\n[1]: https://adventofcode.com/\n"
     with open('README.md', 'w') as f:
         f.write(text)

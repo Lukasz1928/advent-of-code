@@ -1,4 +1,23 @@
-Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
+Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<br>Languages used:
+<table>
+<tbody>
+	<tr>
+		<td>2015</td>
+		<td>?</td>
+	</td>	<tr>
+		<td>2016</td>
+		<td>?</td>
+	</td>	<tr>
+		<td>2017</td>
+		<td>?</td>
+	</td>	<tr>
+		<td>2018</td>
+		<td>?</td>
+	</td>	<tr>
+		<td>2019</td>
+		<td>Python</td>
+	</td></tbody>
+</table>Task checklist:<table>
 <thead>
 	<tr>
 		<td rowspan="2">Day/Task</th>
@@ -84,12 +103,12 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 <tbody>
 	<tr>
 		<td>2015</td>
-			<td>&#x2713</td>
-			<td>&#x2713</td>
-			<td>&#x2713</td>
-			<td>&#x2713</td>
-			<td>&#x2713</td>
-			<td>&#x2713</td>
+			<td>&#x2717</td>
+			<td>&#x2717</td>
+			<td>&#x2717</td>
+			<td>&#x2717</td>
+			<td>&#x2717</td>
+			<td>&#x2717</td>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
