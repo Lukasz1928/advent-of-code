@@ -40,7 +40,7 @@ def generate_solution_checklist_table():
 
 def generate_languages_table():
     languages = {
-        '2015': '?',
+        '2015': 'Java',
         '2016': '?',
         '2017': '?',
         '2018': '?',

@@ -3,7 +3,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<br>Languages u
 <tbody>
 	<tr>
 		<td>2015</td>
-		<td>?</td>
+		<td>Java</td>
 	</td>	<tr>
 		<td>2016</td>
 		<td>?</td>
@@ -103,8 +103,8 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<br>Languages u
 <tbody>
 	<tr>
 		<td>2015</td>
-			<td>&#x2717</td>
-			<td>&#x2717</td>
+			<td>&#x2713</td>
+			<td>&#x2713</td>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
 			<td>&#x2717</td>
