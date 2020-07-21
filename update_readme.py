@@ -1,4 +1,5 @@
 import os
+import re
 
 
 def task_solved(year, day, task):
@@ -13,52 +14,79 @@ def task_solved(year, day, task):
     return True
 
 
+icons = {
+    'py': '<img src="https://img.icons8.com/color/48/000000/python.png">',
+    'java': '<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>'
+}
+
+
+#  assumes file exists
+def get_solution_language_icon(year, day, task):
+    task_path = '{}/day{}/task{}'.format(year, str(day).zfill(2), task)
+    file = [f for f in os.listdir(task_path) if re.match(r'.+\..+', f)][0]
+    ext = file.split('.')[-1]
+    try:
+        return icons[ext]
+    except KeyError:
+        return '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>'
+
+
 def task_sign(year, day, task):
-    return "&#x2713" if task_solved(year, day, task) else "&#x2717"
+    if not task_solved(year, day, task):
+        return '<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>'
+    return get_solution_language_icon(year, day, task)
+
+
+def get_years_range():
+    dir_content = [int(f) for f in os.listdir('.') if f.isnumeric()]
+    return range(min(dir_content), max(dir_content) + 1)
+
+
+def generate_table_header():
+    thead = '<thead>\n\t<tr>\n\t\t<td colspan="2">Task\\Year</td>\n'
+    for year in get_years_range():
+        thead += '\t\t<td>{}</td>\n'.format(year)
+    thead += '\t</tr>\n</thead>\n'
+    return thead
+
+
+def generate_table_body():
+    tasks_count = 25
+    years = get_years_range()
+
+    table = '<tbody>\n'
+    for tid in range(tasks_count):
+        table += '\t<tr>'
+        table += '\t\t<td rowspan="2">{}</td>\n'.format(str(tid + 1).zfill(2))
+        table += "\t\t<td>1</td>\n"
+        for year in years:
+            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 1))
+        table += '\t</tr>'
+        table += '\t<tr>'
+        table += '\t\t<td>2</td>\n'
+        for year in years:
+            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 2))
+        table += '\t</tr>'
+    table += '</tbody>\n'
+    return table
 
 
 def generate_solution_checklist_table():
-    table = 'Task checklist:<table>\n<thead>\n\t<tr>\n\t\t<td rowspan="2">Day/Task</th>\n'
-    for i in range(1, 26):
-        table += '\t\t<td colspan="2" style="text-align:center;">{}</td>\n'.format(str(i).zfill(2))
-    table += '\t</tr>\n\t<tr>\n'
-    for i in range(1, 26):
-        table += '\t\t<td>1</td>\n\t\t<td>2</td>\n'
-    table += '\t</tr>\n</thead>\n<tbody>\n'
-    years = ['2015', '2016', '2017', '2018', '2019']
-    for year in years:
-        year_row = '\t<tr>\n'
-        year_row += '\t\t<td>{}</td>\n'.format(year)
-        for day in range(1, 26):
-            for task in range(1, 3):
-                year_row += '\t\t\t<td>{}</td>\n'.format(task_sign(int(year), day, task))
-        year_row += '\t</tr>\n'
-        table += year_row
-    table += '</tbody>\n</table>'
+    table = '<table>\n{}{}</table>'.format(generate_table_header(), generate_table_body())
     return table
 
 
-def generate_languages_table():
-    languages = {
-        '2015': 'Java',
-        '2016': '?',
-        '2017': '?',
-        '2018': '?',
-        '2019': 'Python'
-    }
-    table = '<br>Languages used:\n<table>\n<tbody>\n'
-    for y, l in languages.items():
-        table += '\t<tr>\n\t\t<td>{}</td>\n\t\t<td>{}</td>\n\t</td>'.format(y, l)
-    table += '</tbody>\n</table>'
-    return table
+def generate_icons_reference():
+    ref = 'Language icons obtained from <cite>[Icons8][2]</cite>'
+    return ref
 
 
 def main():
     text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks."
-    text += generate_languages_table()
     text += generate_solution_checklist_table()
-    text += "\n\n[1]: https://adventofcode.com/\n"
-    with open('README.md', 'w') as f:
+
+    text += "\n\n[1]: https://adventofcode.com/\n[2]: https://icons8.com/"
+    with open('README.md', 'w+') as f:
         f.write(text)
 
 
