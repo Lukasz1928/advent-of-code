@@ -12,26 +12,26 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 <tbody>
 	<tr>		<td rowspan="2">01</td>
 		<td>1</td>
-		<td><img src="https://img.icons8.com/color/48/000000/checkmark.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>	<tr>		<td>2</td>
-		<td><img src="https://img.icons8.com/color/48/000000/checkmark.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>	<tr>		<td rowspan="2">02</td>
 		<td>1</td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>	<tr>		<td>2</td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
