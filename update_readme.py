@@ -16,7 +16,8 @@ def task_solved(year, day, task):
 
 icons = {
     'py': '<img src="https://img.icons8.com/color/48/000000/python.png">',
-    'java': '<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>'
+    'java': '<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>',
+	'c': '<img src="https://img.icons8.com/color/48/000000/c-programming.png"/>'
 }
 
 
