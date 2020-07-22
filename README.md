@@ -26,13 +26,13 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 	</tr>	<tr>		<td rowspan="2">02</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>	<tr>		<td>2</td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
@@ -336,7 +336,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 	</tr></tbody>
-</table>
+</table><br>Most language icons obtained from <cite>[Icons8][2]</cite>
 
 [1]: https://adventofcode.com/
 [2]: https://icons8.com/
