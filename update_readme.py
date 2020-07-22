@@ -19,7 +19,23 @@ icons = {
     'java': '<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>',
 	'c': '<img src="https://img.icons8.com/color/48/000000/c-programming.png"/>',
 	'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>',
-	'cpp': '<img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>'
+	'cpp': '<img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>',
+	'hs': '<img src="https://img.icons8.com/material/48/000000/haskell.png"/>',
+	'asm': '<img src="https://img.icons8.com/android/48/000000/x86.png"/>',
+	'sc': '<img src="https://img.icons8.com/dusk/64/000000/scala.png" width="48" height="48"/>',
+	'sh': '<img src="https://img.icons8.com/fluent/48/000000/console.png"/>',
+	'r': '<img src="https://www.r-project.org/logo/Rlogo.png" width="48" height="48"/>',
+	'cs': '<img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>',
+	'php': '<img src="<img src="https://img.icons8.com/officel/80/000000/php-logo.png"/>" width="48" height="48"/>',
+	'js': '<img src="https://img.icons8.com/color/48/000000/javascript.png"/>',
+	'jl': '<img src="https://symbols.getvecta.com/stencil_85/50_julia-language-icon.d9f53761e1.svg" width="48" height="48"/>',
+	'rb': '<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"/>',
+	'rs': '<img src="<img src="https://www.rust-lang.org/logos/rust-logo-blk.svg"/>" width="48" height="48"/>',
+	'lisp': '<img src="https://img.icons8.com/color/48/000000/lisp.png"/>',
+	'erl': '<img src="https://img.icons8.com/windows/64/000000/erlang.png" width="48" height="48"/>',
+	'lua': '<img src="https://en.wikipedia.org/wiki/Lua_(programming_language)#/media/File:Lua-Logo.svg" width="48" height="48"/>',
+	'kt': '<img src="https://img.icons8.com/color/48/000000/kotlin.png"/>',
+	'go': '<img src="https://img.icons8.com/color/48/000000/golang.png"/>',
 }
 
 
@@ -65,17 +81,17 @@ def generate_table_body():
 
     table = '<tbody>\n'
     for tid in range(tasks_count):
-        table += '\t<tr>'
+        table += '\t<tr>\n'
         table += '\t\t<td rowspan="2">{}</td>\n'.format(str(tid + 1).zfill(2))
         table += "\t\t<td>1</td>\n"
         for year in years:
             table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 1))
-        table += '\t</tr>'
-        table += '\t<tr>'
+        table += '\t</tr>\n'
+        table += '\t<tr>\n'
         table += '\t\t<td>2</td>\n'
         for year in years:
             table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 2))
-        table += '\t</tr>'
+        table += '\t</tr>\n'
     table += '</tbody>\n'
     return table
 
@@ -85,16 +101,10 @@ def generate_solution_checklist_table():
     return table
 
 
-def generate_icons_reference():
-    ref = '<br>Most language icons obtained from <cite>[Icons8][2]</cite>'
-    return ref
-
-
 def main():
-    text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks."
+    text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.\n"
     text += generate_solution_checklist_table()
-    text += generate_icons_reference()
-    text += "\n\n[1]: https://adventofcode.com/\n[2]: https://icons8.com/"
+    text += "\n\n[1]: https://adventofcode.com/\n"
     with open('README.md', 'w+') as f:
         f.write(text)
 
