@@ -18,7 +18,8 @@ icons = {
     'py': '<img src="https://img.icons8.com/color/48/000000/python.png">',
     'java': '<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>',
 	'c': '<img src="https://img.icons8.com/color/48/000000/c-programming.png"/>',
-	'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>'
+	'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>',
+	'cpp': '<img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>'
 }
 
 
@@ -85,14 +86,14 @@ def generate_solution_checklist_table():
 
 
 def generate_icons_reference():
-    ref = 'Language icons obtained from <cite>[Icons8][2]</cite>'
+    ref = '<br>Most language icons obtained from <cite>[Icons8][2]</cite>'
     return ref
 
 
 def main():
     text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks."
     text += generate_solution_checklist_table()
-
+    text += generate_icons_reference()
     text += "\n\n[1]: https://adventofcode.com/\n[2]: https://icons8.com/"
     with open('README.md', 'w+') as f:
         f.write(text)
