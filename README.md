@@ -13,7 +13,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 	<tr>		<td rowspan="2">01</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/more.png"/></td>
+		<td><img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/c-programming.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>

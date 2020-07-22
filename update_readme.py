@@ -17,7 +17,8 @@ def task_status(year, day, task):
 icons = {
     'py': '<img src="https://img.icons8.com/color/48/000000/python.png">',
     'java': '<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>',
-	'c': '<img src="https://img.icons8.com/color/48/000000/c-programming.png"/>'
+	'c': '<img src="https://img.icons8.com/color/48/000000/c-programming.png"/>',
+	'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>'
 }
 
 

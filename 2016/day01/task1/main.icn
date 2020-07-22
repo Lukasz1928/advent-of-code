@@ -1,0 +1,50 @@
+
+procedure rotate(direction, rotation)
+	if direction == "N" then
+		return if rotation == "L" then "W" else "E"
+	if direction == "S" then
+		return if rotation == "L" then "E" else "W"
+	if direction == "E" then
+		return if rotation == "L" then "N" else "S"
+	if direction == "W" then
+		return if rotation == "L" then "S" else "N"
+end
+
+procedure move(location, direction, distance)
+	if direction == "N" then
+		return [get(location) + distance, get(location)]
+	if direction == "S" then
+		return [get(location) - distance, get(location)]
+	if direction == "E" then
+		return [get(location), get(location) + distance]
+	if direction == "W" then
+		return [get(location), get(location) - distance]
+end
+		
+procedure main()
+	f := open("input", "r")
+	raw_data := read(f)
+	commands := list()
+	raw_data ||:= ","
+	raw_data ? {
+		every p := upto(',') do {
+			com := tab(p)
+			if com ? =", " then
+				com := com[3:0]
+			put(commands, com)
+		}
+	}
+	close(f)
+	loc := [0, 0]
+	dir := "N"
+	every com := !commands do {
+		com ? {
+			rot := tab(upto(&digits))
+			dist := integer(tab(0))	
+		}
+		dir := rotate(dir, rot)
+		loc := move(loc, dir, dist)
+	}
+	result := abs(get(loc)) + abs(get(loc))
+	write(result)
+end
