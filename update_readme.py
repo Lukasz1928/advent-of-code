@@ -2,16 +2,16 @@ import os
 import re
 
 
-def task_solved(year, day, task):
+def task_status(year, day, task):
     task_path = '{}/day{}/task{}'.format(year, str(day).zfill(2), task)
     if not os.path.isdir(task_path):
-        return False
+        return "notStated"
     if 'solution' not in os.listdir(task_path):
-        return False
+        return "inProgress"
     with open('{}/solution'.format(task_path)) as f:
         if len(f.read()) == 0:
-            return False
-    return True
+            return "inProgress"
+    return "solved"
 
 
 icons = {
@@ -23,9 +23,12 @@ icons = {
 
 #  assumes file exists
 def get_solution_language_icon(year, day, task):
-    task_path = '{}/day{}/task{}'.format(year, str(day).zfill(2), task)
-    file = [f for f in os.listdir(task_path) if re.match(r'.+\..+', f)][0]
-    ext = file.split('.')[-1]
+    try:
+        task_path = '{}/day{}/task{}'.format(year, str(day).zfill(2), task)
+        file = [f for f in os.listdir(task_path) if re.match(r'.+\..+', f)][0]
+        ext = file.split('.')[-1]
+    except Exception:
+        return '<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>'
     try:
         return icons[ext]
     except KeyError:
@@ -33,8 +36,11 @@ def get_solution_language_icon(year, day, task):
 
 
 def task_sign(year, day, task):
-    if not task_solved(year, day, task):
+    status = task_status(year, day, task)
+    if status == "notStarted":
         return '<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>'
+    elif status == "inProgress":
+        return '<img src="https://img.icons8.com/color/48/000000/more.png"/>'
     return get_solution_language_icon(year, day, task)
 
 

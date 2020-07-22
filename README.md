@@ -13,7 +13,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 	<tr>		<td rowspan="2">01</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/more.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/c-programming.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
@@ -178,7 +178,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/more.png"/></td>
 	</tr>	<tr>		<td rowspan="2">14</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
@@ -191,14 +191,14 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/more.png"/></td>
 	</tr>	<tr>		<td rowspan="2">15</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/more.png"/></td>
 	</tr>	<tr>		<td>2</td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
@@ -295,7 +295,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/more.png"/></td>
 	</tr>	<tr>		<td rowspan="2">23</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
@@ -321,7 +321,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.<table>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/more.png"/></td>
 	</tr>	<tr>		<td rowspan="2">25</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
