@@ -22,7 +22,7 @@ icons = {
 	'cpp': '<img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>',
 	'hs': '<img src="https://img.icons8.com/material/48/000000/haskell.png"/>',
 	'asm': '<img src="https://img.icons8.com/android/48/000000/x86.png"/>',
-	'sc': '<img src="https://img.icons8.com/dusk/64/000000/scala.png" width="48" height="48"/>',
+	'scala': '<img src="https://img.icons8.com/dusk/64/000000/scala.png" width="48" height="48"/>',
 	'sh': '<img src="https://img.icons8.com/fluent/48/000000/console.png"/>',
 	'r': '<img src="https://www.r-project.org/logo/Rlogo.png" width="48" height="48"/>',
 	'cs': '<img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>',
