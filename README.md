@@ -34,7 +34,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/material/48/000000/haskell.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>
 	<tr>
@@ -42,7 +42,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/material/48/000000/haskell.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>
 	<tr>
