@@ -1,5 +1,7 @@
 Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
-<table>
+
+**LANGUAGES USED:**<br>
+<img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/><img src="https://img.icons8.com/color/48/000000/c-programming.png"/><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/><img src="https://img.icons8.com/material/48/000000/haskell.png"/><img src="https://img.icons8.com/dusk/64/000000/scala.png" width="48" height="48"/><img src="https://img.icons8.com/color/48/000000/kotlin.png"/><img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/><br><table>
 <thead>
 	<tr>
 		<td colspan="2">Task\Year</td>
