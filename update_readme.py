@@ -117,9 +117,9 @@ def genrate_languages_used_list():
     except Exception:
         pass
     for i, l in enumerate(sorted(list(langs), key=lambda a: list(icons.values()).index(a))):
-        lst += l
         if i > 0 and i % 10 == 0:
             lst += "<br>\n"
+        lst += l
     lst += "<br>"
     return lst
     
