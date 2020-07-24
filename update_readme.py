@@ -24,7 +24,7 @@ icons = {
 	'sh': '<img src="https://img.icons8.com/fluent/48/000000/console.png"/>',
 	'r': '<img src="https://www.r-project.org/logo/Rlogo.png" width="48" height="48"/>',
 	'cs': '<img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>',
-	'php': '<img src="<img src="https://img.icons8.com/officel/80/000000/php-logo.png"/>" width="48" height="48"/>',
+	'php': '<img src="https://img.icons8.com/officel/80/000000/php-logo.png" width="48" height="48"/>',
 	'js': '<img src="https://img.icons8.com/color/48/000000/javascript.png"/>',
 	'jl': '<img src="https://symbols.getvecta.com/stencil_85/50_julia-language-icon.d9f53761e1.svg" width="48" height="48"/>',
 	'rb': '<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"/>',
