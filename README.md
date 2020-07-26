@@ -2,7 +2,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 
 **LANGUAGES USED:**<br>
 <img src="https://img.icons8.com/color/48/000000/python.png"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/><img src="https://img.icons8.com/color/48/000000/c-programming.png"/><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/><img src="https://img.icons8.com/material/48/000000/haskell.png"/><img src="https://img.icons8.com/dusk/64/000000/scala.png" width="48" height="48"/><img src="https://www.r-project.org/logo/Rlogo.png" width="48" height="48"/><img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/><img src="https://img.icons8.com/officel/80/000000/php-logo.png" width="48" height="48"/><img src="https://img.icons8.com/color/48/000000/javascript.png"/><br>
-<img src="https://symbols.getvecta.com/stencil_85/50_julia-language-icon.d9f53761e1.svg" width="48" height="48"/><img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"/><img src="http://abolfazlm.com/image/Assembly-logo.png" widht="48" height="48"/><img src="https://img.icons8.com/color/48/000000/kotlin.png"/><img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/><br><table>
+<img src="https://symbols.getvecta.com/stencil_85/50_julia-language-icon.d9f53761e1.svg" width="48" height="48"/><img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"/><img src="https://img.icons8.com/windows/64/000000/erlang.png" width="48" height="48"/><img src="http://abolfazlm.com/image/Assembly-logo.png" widht="48" height="48"/><img src="https://img.icons8.com/color/48/000000/kotlin.png"/><img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/><br><table>
 <thead>
 	<tr>
 		<td colspan="2">Task\Year</td>
@@ -238,7 +238,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 	<tr>
 		<td rowspan="2">14</td>
 		<td>1</td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/windows/64/000000/erlang.png" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
@@ -246,7 +246,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 	</tr>
 	<tr>
 		<td>2</td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/windows/64/000000/erlang.png" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
