@@ -30,7 +30,7 @@ icons = {
 	'rb': '<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"/>',
 	'rs': '<img src="<img src="https://www.rust-lang.org/logos/rust-logo-blk.svg"/>" width="48" height="48"/>',
 	'erl': '<img src="https://img.icons8.com/windows/64/000000/erlang.png" width="48" height="48"/>',
-	'lua': '<img src="https://en.wikipedia.org/wiki/Lua_(programming_language)#/media/File:Lua-Logo.svg" width="48" height="48"/>',
+	'lua': '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/1024px-Lua-Logo.svg.png" width="48" height="48"/>',
     'asm': '<img src="http://abolfazlm.com/image/Assembly-logo.png" widht="48" height="48"/>',
 	'kt': '<img src="https://img.icons8.com/color/48/000000/kotlin.png"/>',
 	'go': '<img src="https://img.icons8.com/color/48/000000/golang.png"/>',
