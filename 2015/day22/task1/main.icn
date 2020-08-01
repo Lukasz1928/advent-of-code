@@ -1,0 +1,94 @@
+
+procedure readInput()
+	f := open("input", "r")
+    hp := (read(f) ? 2(tab(upto(&digits)), tab(0)))
+    dmg := (read(f) ? 2(tab(upto(&digits)), tab(0)))
+    close(f)
+    return [hp, dmg]
+end
+
+procedure damage(atk, armor)
+    if armor >= atk then {
+        return 1
+    }
+    return atk - armor
+end
+
+global minCost
+
+procedure calculateMinMana(enemyHP, enemyDMG, playerHP, playerMana, shieldDuration, poisonDuration, rechargeDuration, currentCost)
+    if currentCost >= minCost then {
+        return
+    }
+    if enemyHP <= 0 then {
+        if currentCost < minCost then {
+            minCost := currentCost
+        }
+        return
+    }
+    if playerHP <= 0 then {
+        return
+    }
+
+    if poisonDuration == 1 then {
+        enemyHP := enemyHP - 3
+        poisonDuration := 0
+    }
+    else if poisonDuration >= 2 then {
+        enemyHP := enemyHP - 6
+        poisonDuration := poisonDuration - 2
+    }
+    
+    if shieldDuration >= 2 then {
+        currentArmor := if shieldDuration > 0 then 7 else 0
+        shieldDuration := shieldDuration - 2
+    }
+    else {
+        currentArmor := 0
+        shieldDuration := 0
+    }
+    
+    if rechargeDuration > 0 then {
+        playerMana := playerMana + 101
+        rechargeDuration := rechargeDuration - 1
+    }
+    
+    # player uses magic missle
+    if playerMana >= 53 then {
+        calculateMinMana(enemyHP - 4, enemyDMG, playerHP - damage(enemyDMG, currentArmor), playerMana - 53 + (if rechargeDuration > 0 then 101 else 0), shieldDuration, poisonDuration, (if rechargeDuration > 0 then (rechargeDuration - 1) else 0), currentCost + 53)
+    }
+    
+    # player uses drain
+    if playerMana >= 73 then {
+        calculateMinMana(enemyHP - 2, enemyDMG, playerHP + 2 - damage(enemyDMG, currentArmor), playerMana - 73 + (if rechargeDuration > 0 then 101 else 0), shieldDuration, poisonDuration, (if rechargeDuration > 0 then (rechargeDuration - 1) else 0), currentCost + 73)
+    }
+    
+    # player uses shield
+    if shieldDuration == 0 & playerMana >= 113 then {
+        calculateMinMana(enemyHP, enemyDMG, playerHP - damage(enemyDMG, currentArmor), playerMana - 113 + (if rechargeDuration > 0 then 101 else 0), 6, poisonDuration, (if rechargeDuration > 0 then (rechargeDuration - 1) else 0), currentCost + 113)
+    }
+    
+    # player uses poison
+    if poisonDuration == 0 & playerMana >= 173 then {
+        calculateMinMana(enemyHP, enemyDMG, playerHP - damage(enemyDMG, currentArmor), playerMana - 173 + (if rechargeDuration > 0 then 101 else 0), shieldDuration, 6, (if rechargeDuration > 0 then (rechargeDuration - 1) else 0), currentCost + 173)
+    }
+    
+    # player uses recharge
+    if rechargeDuration == 0 & playerMana >= 229 then {
+        calculateMinMana(enemyHP, enemyDMG, playerHP - damage(enemyDMG, currentArmor), playerMana - 229 + 101, shieldDuration, poisonDuration, 5, currentCost + 229)
+    }
+end
+
+procedure main()
+    enemy := readInput()
+    enemyHP := get(enemy)
+    enemyDMG := get(enemy)
+    
+    playerHP := 50
+    playerMana := 500
+    
+    minCost := 100000000
+    
+    calculateMinMana(enemyHP, enemyDMG, playerHP, playerMana, 0, 0, 0, 0)
+    write(minCost)
+end
