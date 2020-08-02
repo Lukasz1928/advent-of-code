@@ -35,6 +35,7 @@ icons = {
 	'kt': '<img src="https://img.icons8.com/color/48/000000/kotlin.png"/>',
 	'go': '<img src="https://img.icons8.com/color/48/000000/golang.png"/>',
     'lisp': '<img src="https://img.icons8.com/color/48/000000/lisp.png"/>',
+    'm': '<img src="https://download.logo.wine/logo/GNU_Octave/GNU_Octave-Logo.wine.png" width="48" height="48"/>',
     'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>',
 }
 
