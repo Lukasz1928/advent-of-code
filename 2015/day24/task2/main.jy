@@ -1,0 +1,77 @@
+
+
+def read_input():
+    return set([int(line) for line in open("input")])
+    
+
+def can_be_partitioned(weights):
+    if len(weights) < 3:
+        return False
+    s = sum(weights)
+    if s % 2 != 0:
+        return False
+    parts = {}
+    def subsets_with_sums_exist(weights, n, a, b, c):
+        if a == b == c == 0:
+            return True
+        if n < 0:
+            return False
+        k = (a, b, c, n)
+        if k not in parts:
+            A = subsets_with_sums_exist(weights, n - 1, a - weights[n], b, c) if a >= weights[n] else False
+            B = subsets_with_sums_exist(weights, n - 1, a, b - weights[n], c) if b >= weights[n] else False
+            C = subsets_with_sums_exist(weights, n - 1, a, b, c - weights[n]) if c >= weights[n] else False
+            parts[k] = A or B or C
+        return parts[k]   
+    return subsets_with_sums_exist(weights, len(weights) - 1, s // 3, s // 3, s // 3)
+    
+    
+def subset(array, num, length=None):
+    result = []
+    def find(arr, num, len=None, path=()):
+        if len is not None and len == 0:
+            return
+        if not arr:
+            return
+        if arr[0] == num:
+            if len == 1:
+                result.append(path + (arr[0],))
+            else:
+                return
+        else:
+            if len is not None:
+                find(arr[1:], num - arr[0], len - 1, path + (arr[0],))
+                find(arr[1:], num, len, path)
+            else:
+                find(arr[1:], num - arr[0], None, path + (arr[0],))
+                find(arr[1:], num, None, path)
+    find(array, num, length)
+    return result
+
+
+def solve(weights):
+    total_weight = sum(weights)
+    length = 1
+    found = False
+    min_qe = calculate_quantum_entanglement(weights)
+    while not found:
+        for t in subset(list(weights), total_weight // 4, length):
+            if can_be_partitioned(list(weights - set(t))):
+                found = True
+                qe = calculate_quantum_entanglement(t)
+                if qe < min_qe:
+                    min_qe = qe
+        length += 1
+    return min_qe
+
+
+def calculate_quantum_entanglement(config):
+    prod = 1
+    for p in config:
+        prod *= p
+    return prod
+
+    
+weights = read_input()
+res = solve(weights)
+print(res)
