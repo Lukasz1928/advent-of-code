@@ -43,6 +43,15 @@ icons = {
     'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>',
 }
 
+signs = {
+    'solved': '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>',
+    'unsolved': '<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>',
+    'inprogress': '<img src="https://img.icons8.com/color/48/000000/more.png"/>'
+}
+
+sign_exceptions = {
+    (2015, 25, 2): '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>'
+}
 
 #  assumes file exists
 def get_solution_language_icon(year, day, task):
@@ -51,19 +60,23 @@ def get_solution_language_icon(year, day, task):
         file = [f for f in os.listdir(task_path) if re.match(r'.+\..+', f)][0]
         ext = file.split('.')[-1]
     except Exception:
-        return '<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>'
+        return signs['unsolved']
     try:
         return icons[ext]
     except KeyError:
-        return '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>'
+        return signs['solved']
 
 
 def task_sign(year, day, task):
+    try:
+        return sign_exceptions[(year, day, task)]
+    except KeyError:
+        pass # task not in sign_exceptions
     status = task_status(year, day, task)
     if status == "notStarted":
-        return '<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>'
+        return signs['unsolved']
     elif status == "inProgress":
-        return '<img src="https://img.icons8.com/color/48/000000/more.png"/>'
+        return signs['inprogress']
     return get_solution_language_icon(year, day, task)
 
 
@@ -110,15 +123,15 @@ def genrate_languages_used_list():
                 if task_status(year, task + 1, subtask + 1) == "solved":
                     langs.add(get_solution_language_icon(year, task + 1, subtask + 1))
     try:
-        langs.remove('<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>')
+        langs.remove(signs['solved'])
     except Exception:
         pass
     try:
-        langs.remove('<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>')
+        langs.remove(signs['unsolved'])
     except Exception:
         pass
     try:
-        langs.remove('<img src="https://img.icons8.com/color/48/000000/more.png"/>')
+        langs.remove(signs['inprogress'])
     except Exception:
         pass
     for i, l in enumerate(sorted(list(langs), key=lambda a: list(icons.values()).index(a))):
