@@ -38,6 +38,7 @@ icons = {
     'm': '<img src="https://download.logo.wine/logo/GNU_Octave/GNU_Octave-Logo.wine.png" width="48" height="48"/>',
     'clj': '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/1024px-Clojure_logo.svg.png" width="48" height="48"/>',
     'fs': '<img src="https://fsharp.org/img/logo/fsharp256.png" width="48" height="48"/>',
+    'dart': '<img src="https://cdn.freebiesupply.com/logos/thumbs/2x/dart-logo.png" width="48" height="48">',
     'jy' : '<img src="https://blog.xebialabs.com/wp-content/uploads/2016/02/logo6.gif" width="48" height="48"/>',
     'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>',
 }
