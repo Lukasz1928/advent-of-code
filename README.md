@@ -87,7 +87,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td rowspan="2">05</td>
 		<td>1</td>
 		<td><img src="https://img.icons8.com/officel/80/000000/php-logo.png" width="48" height="48"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
@@ -95,7 +95,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 	<tr>
 		<td>2</td>
 		<td><img src="https://img.icons8.com/officel/80/000000/php-logo.png" width="48" height="48"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
