@@ -21,7 +21,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="https://i.pinimg.com/236x/8c/b1/8c/8cb18c72082d13eb581cf6d452e8e266.jpg" widht="48" height="48"/></td>
 		<td><img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/c-programming.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>
 	<tr>
@@ -29,7 +29,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="https://i.pinimg.com/236x/8c/b1/8c/8cb18c72082d13eb581cf6d452e8e266.jpg" widht="48" height="48"/></td>
 		<td><img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/c-programming.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>
 	<tr>
