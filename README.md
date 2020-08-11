@@ -141,7 +141,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td>1</td>
 		<td><img src="https://symbols.getvecta.com/stencil_85/50_julia-language-icon.d9f53761e1.svg" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>
@@ -149,7 +149,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td>2</td>
 		<td><img src="https://symbols.getvecta.com/stencil_85/50_julia-language-icon.d9f53761e1.svg" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 	</tr>
