@@ -311,7 +311,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td>1</td>
 		<td><img src="https://img.icons8.com/fluent/48/000000/console.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 	</tr>
@@ -319,7 +319,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td>2</td>
 		<td><img src="https://img.icons8.com/fluent/48/000000/console.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 	</tr>
