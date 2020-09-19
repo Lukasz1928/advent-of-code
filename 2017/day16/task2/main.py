@@ -38,7 +38,7 @@ programs_count = 16
 progs = to_names(list(range(programs_count)))
 
 prev_programs = {phash(progs)}
-first_repeat_id = 0
+first_repeat_id = 1
 while True:
     for instr in instrs:
         progs = apply(progs, instr)
@@ -56,12 +56,13 @@ while True:
         progs = apply(progs, instr)
     if progs == period_start_program:
         break
-print("bb")
+
 dance_repeats = 1000000000 - first_repeat_id
 needed_additional_transforms = dance_repeats % period
+final_progs = period_start_program
 for _ in range(needed_additional_transforms):
     for instr in instrs:
-        progs = apply(progs, instr)
+        final_progs = apply(final_progs, instr)
 
-result = phash(progs)
+result = phash(final_progs)
 print(result)
