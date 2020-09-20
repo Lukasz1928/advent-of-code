@@ -2,8 +2,8 @@ import os
 import re
 
 
-def task_status(year, day, task):
-    task_path = '{}/day{}/task{}'.format(year, str(day).zfill(2), task)
+def task_status(year, day, task, basedir):
+    task_path = '{}/solutions/{}/day{}/task{}'.format(basedir, year, str(day).zfill(2), task)
     if not os.path.isdir(task_path):
         return "notStated"
     if 'solution' not in os.listdir(task_path):
@@ -55,9 +55,9 @@ sign_exceptions = {
 }
 
 #  assumes file exists
-def get_solution_language_icon(year, day, task):
+def get_solution_language_icon(year, day, task, basedir):
     try:
-        task_path = '{}/day{}/task{}'.format(year, str(day).zfill(2), task)
+        task_path = '{}/solutions/{}/day{}/task{}'.format(basedir, year, str(day).zfill(2), task)
         file = [f for f in os.listdir(task_path) if re.match(r'.+\..+', f)][0]
         ext = file.split('.')[-1]
     except Exception:
@@ -68,35 +68,35 @@ def get_solution_language_icon(year, day, task):
         return signs['solved']
 
 
-def task_sign(year, day, task):
+def task_sign(year, day, task, basedir):
     try:
         return sign_exceptions[(year, day, task)]
     except KeyError:
         pass # task not in sign_exceptions
-    status = task_status(year, day, task)
+    status = task_status(year, day, task, basedir)
     if status == "notStarted":
         return signs['unsolved']
     elif status == "inProgress":
         return signs['inprogress']
-    return get_solution_language_icon(year, day, task)
+    return get_solution_language_icon(year, day, task, basedir)
 
 
-def get_years_range():
-    dir_content = [int(f) for f in os.listdir('.') if f.isnumeric()]
+def get_years_range(basedir):
+    dir_content = [int(f) for f in os.listdir(basedir + '/solutions') if f.isnumeric()]
     return range(min(dir_content), max(dir_content) + 1)
 
 
-def generate_table_header():
+def generate_table_header(basedir):
     thead = '<thead>\n\t<tr>\n\t\t<td colspan="2">Task\\Year</td>\n'
-    for year in get_years_range():
+    for year in get_years_range(basedir):
         thead += '\t\t<td>{}</td>\n'.format(year)
     thead += '\t</tr>\n</thead>\n'
     return thead
 
 
-def generate_table_body():
+def generate_table_body(basedir):
     tasks_count = 25
-    years = get_years_range()
+    years = get_years_range(basedir)
 
     table = '<tbody>\n'
     for tid in range(tasks_count):
@@ -104,25 +104,26 @@ def generate_table_body():
         table += '\t\t<td rowspan="2">{}</td>\n'.format(str(tid + 1).zfill(2))
         table += "\t\t<td>1</td>\n"
         for year in years:
-            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 1))
+            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 1, basedir))
         table += '\t</tr>\n'
         table += '\t<tr>\n'
         table += '\t\t<td>2</td>\n'
         for year in years:
-            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 2))
+            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 2, basedir))
         table += '\t</tr>\n'
     table += '</tbody>\n'
     return table
 
-def genrate_languages_used_list():
+def generate_languages_used_list(basedir):
     lst = "\n**LANGUAGES USED:**<br>\n"
     tasks_count = 25
     langs = set()
-    for year in get_years_range():
+    for year in get_years_range(basedir):
         for task in range(tasks_count):
             for subtask in range(2):
-                if task_status(year, task + 1, subtask + 1) == "solved":
-                    langs.add(get_solution_language_icon(year, task + 1, subtask + 1))
+                print(task_status(year, task + 1, subtask + 1, basedir))
+                if task_status(year, task + 1, subtask + 1, basedir) == "solved":
+                    langs.add(get_solution_language_icon(year, task + 1, subtask + 1, basedir))
     try:
         langs.remove(signs['solved'])
     except Exception:
@@ -143,17 +144,19 @@ def genrate_languages_used_list():
     return lst
     
 
-def generate_solution_checklist_table():
-    table = '<table>\n{}{}</table>'.format(generate_table_header(), generate_table_body())
+def generate_solution_checklist_table(basedir):
+    table = '<table>\n{}{}</table>'.format(generate_table_header(basedir), generate_table_body(basedir))
     return table
 
 
 def main():
+    wd = os.getcwd()
+    basedir = '/'.join(wd.split('\\')[:-1]) if wd.endswith('misc') else wd
     text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.\n"
-    text += genrate_languages_used_list()
-    text += generate_solution_checklist_table()
+    text += generate_languages_used_list(basedir)
+    text += generate_solution_checklist_table(basedir)
     text += "\n\n[1]: https://adventofcode.com/\n"
-    with open('README.md', 'w+') as f:
+    with open(basedir + '\README.md', 'w+') as f:
         f.write(text)
 
 
