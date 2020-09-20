@@ -1,61 +1,59 @@
-from collections import defaultdict
+# Original code seems impossible to run in a finite amount of time.
+# It is supposed to count non-prime numbers in the range [b, c] with a step of 17(so {b, b+17, b+34,..., c}) are checked
+# Basic idea of the original algorithm is described below:
+
+# b = 106700
+# c = 123700
+# d = 0
+# e = 0
+# f = 0
+# g = 0
+# h = 0
+# for b in range(low, high + 1, 17):  # iterate over all candidate numbers
+#     f = 1  # flag - f = 1 for prime numbers
+#     d = 2  # first potential divisor of b
+#     while True:  # iterate over all possible divisors d in {2, 3,...,b}
+#         e = 2  # second potential divisor of b
+#         while True:  # iterate over all possible divisors e in {2, 3,...,b}
+#             g = d * e - b  # check if b = d * e
+#             e = e + 1
+#             if g == 0:  # if b = d * e then b is composite
+#                 f = 0
+#             g = e - b  # end iteration if e = b because no bigger divisors are possible
+#             if g == 0:
+#                 break
+#         d = d + 1
+#         g = d - b  # end iteration if d = b because no bigger divisors are possible
+#         if g == 0:
+#             break
+#     if f == 0:  # increase counter of composite numbers if b is composite
+#         h = h + 1
+#     g = b - high  # end iteration if b exceeds upper bound of interval
+#     if g == 0:
+#         break
+#
+# result = h
+# print(result)
 
 
-def parse_instruction(instr):
-    ts = instr.split(' ')
-    i = (ts[0],)
-    i += (ts[1] if ts[1].isalpha() else int(ts[1]), )
-    if len(ts) == 3:
-        i += (ts[2] if ts[2].isalpha() else int(ts[2]),)
-    return i
+from math import sqrt, ceil
 
 
-def read_input():
-    with open('input', 'r') as f:
-        return [parse_instruction(x.strip()) for x in f]
+def is_prime(n):
+    if n % 2 == 0:
+        return False
+    for d in range(3, ceil(sqrt(n)), 2):
+        if n % d == 0:
+            return False
+    return True
 
 
-def value_of(regs, reg):
-    if isinstance(reg, int):
-        return reg
-    return regs[reg]
+low = 106700
+high = 123700
 
+cnt = 0
+for b in range(low, high + 1, 17):
+    if not is_prime(b):
+        cnt += 1
+print(cnt)
 
-class Computer:
-    def __init__(self, instructions):
-        self.instrs = instructions
-        self.registers = defaultdict(lambda: 0)
-        self.registers['a'] = 1
-        self.ip = 0
-
-    def can_be_run(self):
-        return 0 <= self.ip < len(self.instrs)
-
-    def run(self):
-        instr = self.instrs[self.ip]
-        if instr[0] == 'set':
-            self.registers[instr[1]] = value_of(self.registers, instr[2])
-            self.ip += 1
-            return 0
-        elif instr[0] == 'sub':
-            self.registers[instr[1]] = self.registers[instr[1]] - value_of(self.registers, instr[2])
-            self.ip += 1
-            return 0
-        elif instr[0] == 'mul':
-            self.registers[instr[1]] = self.registers[instr[1]] * value_of(self.registers, instr[2])
-            self.ip += 1
-            return 0
-        elif instr[0] == 'jnz':
-            if value_of(self.registers, instr[1]) != 0:
-                self.ip += value_of(self.registers, instr[2])
-            else:
-                self.ip += 1
-            return 0
-
-
-instrs = read_input()
-c = Computer(instrs)
-while c.can_be_run():
-    c.run()
-result = c.registers['h']
-print(result)

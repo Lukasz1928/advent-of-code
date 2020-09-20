@@ -50,7 +50,8 @@ signs = {
 }
 
 sign_exceptions = {
-    (2015, 25, 2): '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>'
+    (2015, 25, 2): '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>',
+    (2017, 25, 2): '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>'
 }
 
 #  assumes file exists
