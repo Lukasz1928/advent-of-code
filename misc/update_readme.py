@@ -13,45 +13,18 @@ def task_status(year, day, task, basedir):
             return "inProgress"
     return "solved"
 
-
-icons = {
-    'py': '<img src="https://img.icons8.com/color/48/000000/python.png">',
-    'java': '<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/>',
-	'c': '<img src="https://img.icons8.com/color/48/000000/c-programming.png"/>',
-    'cpp': '<img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>',
-	'hs': '<img src="https://img.icons8.com/material/48/000000/haskell.png"/>',
-	'scala': '<img src="https://img.icons8.com/dusk/64/000000/scala.png" width="48" height="48"/>',
-	'sh': '<img src="https://img.icons8.com/fluent/48/000000/console.png"/>',
-	'R': '<img src="https://www.r-project.org/logo/Rlogo.png" width="48" height="48"/>',
-	'cs': '<img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>',
-	'php': '<img src="https://img.icons8.com/officel/80/000000/php-logo.png" width="48" height="48"/>',
-	'js': '<img src="https://img.icons8.com/color/48/000000/javascript.png"/>',
-	'jl': '<img src="https://symbols.getvecta.com/stencil_85/50_julia-language-icon.d9f53761e1.svg" width="48" height="48"/>',
-	'rb': '<img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png"/>',
-	'rs': '<img src="https://www.rust-lang.org/logos/rust-logo-blk.svg" width="48" height="48"/>',
-	'erl': '<img src="https://img.icons8.com/windows/64/000000/erlang.png" width="48" height="48"/>',
-	'lua': '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lua-Logo.svg/1024px-Lua-Logo.svg.png" width="48" height="48"/>',
-    'asm': '<img src="https://i.pinimg.com/236x/8c/b1/8c/8cb18c72082d13eb581cf6d452e8e266.jpg" widht="48" height="48"/>',
-	'kt': '<img src="https://img.icons8.com/color/48/000000/kotlin.png"/>',
-	'go': '<img src="https://img.icons8.com/color/48/000000/golang.png"/>',
-    'lisp': '<img src="https://img.icons8.com/color/48/000000/lisp.png"/>',
-    'm': '<img src="https://download.logo.wine/logo/GNU_Octave/GNU_Octave-Logo.wine.png" width="48" height="48"/>',
-    'clj': '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/1024px-Clojure_logo.svg.png" width="48" height="48"/>',
-    'fs': '<img src="https://fsharp.org/img/logo/fsharp256.png" width="48" height="48"/>',
-    'dart': '<img src="https://cdn.freebiesupply.com/logos/thumbs/2x/dart-logo.png" width="48" height="48">',
-    'jy' : '<img src="https://blog.xebialabs.com/wp-content/uploads/2016/02/logo6.gif" width="48" height="48"/>',
-    'icn': '<img src="https://www2.cs.arizona.edu/icon/wwwcube.gif" width="48" height="48"/>',
-}
+    
+icons_order = ['py', 'java', 'c', 'cpp', 'hs', 'scala', 'kt', 'cs', 'rb', 'clj', 'erl', 'js', 'jl', 'r', 'm', 'fs', 'php', 'dart', 'lua', 'jy', 'go', 'rs', 'asm', 'sh', 'icn']
 
 signs = {
-    'solved': '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>',
-    'unsolved': '<img src="https://img.icons8.com/color/48/000000/delete-sign.png"/>',
-    'inprogress': '<img src="https://img.icons8.com/color/48/000000/more.png"/>'
+    'solved': '<img src="misc/images/checkmark.png" width="48" height="48">',
+    'unsolved': '<img src="misc/images/delete-sign.png" width="48" height="48">',
+    'inprogress': '<img src="misc/images/more.png" width="48" height="48">'
 }
 
 sign_exceptions = {
-    (2015, 25, 2): '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>',
-    (2017, 25, 2): '<img src="https://img.icons8.com/color/48/000000/checkmark.png"/>'
+    (2015, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">',
+    (2017, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">'
 }
 
 #  assumes file exists
@@ -59,12 +32,14 @@ def get_solution_language_icon(year, day, task, basedir):
     try:
         task_path = '{}/solutions/{}/day{}/task{}'.format(basedir, year, str(day).zfill(2), task)
         file = [f for f in os.listdir(task_path) if re.match(r'.+\..+', f)][0]
-        ext = file.split('.')[-1]
+        ext = file.split('.')[-1].lower()
     except Exception:
         return signs['unsolved']
-    try:
-        return icons[ext]
-    except KeyError:
+        
+    available_icons = os.listdir(basedir + '/misc/images')
+    if (ext + '.png') in available_icons:
+        return '<img src="misc/images/{}.png" width="48" height="48">'.format(ext)
+    else:
         return signs['solved']
 
 
@@ -121,7 +96,6 @@ def generate_languages_used_list(basedir):
     for year in get_years_range(basedir):
         for task in range(tasks_count):
             for subtask in range(2):
-                print(task_status(year, task + 1, subtask + 1, basedir))
                 if task_status(year, task + 1, subtask + 1, basedir) == "solved":
                     langs.add(get_solution_language_icon(year, task + 1, subtask + 1, basedir))
     try:
@@ -136,7 +110,7 @@ def generate_languages_used_list(basedir):
         langs.remove(signs['inprogress'])
     except Exception:
         pass
-    for i, l in enumerate(sorted(list(langs), key=lambda a: list(icons.values()).index(a))):
+    for i, l in enumerate(sorted(list(langs), key=lambda a: icons_order.index(a.split(' ')[1].split('/')[-1][:-5]))):
         if i > 0 and i % 5 == 0:
             lst += "<br>\n"
         lst += l
