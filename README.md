@@ -362,7 +362,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td>1</td>
 		<td><img src="https://www.rust-lang.org/logos/rust-logo-blk.svg" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 	</tr>
@@ -370,7 +370,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td>2</td>
 		<td><img src="https://www.rust-lang.org/logos/rust-logo-blk.svg" width="48" height="48"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
-		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
+		<td><img src="https://img.icons8.com/color/48/000000/python.png"></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 		<td><img src="https://img.icons8.com/color/48/000000/delete-sign.png"/></td>
 	</tr>
