@@ -276,7 +276,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td rowspan="2">16</td>
 		<td>1</td>
 		<td><img src="misc/images/fs.png" width="48" height="48"></td>
-		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
+		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
@@ -284,7 +284,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 	<tr>
 		<td>2</td>
 		<td><img src="misc/images/fs.png" width="48" height="48"></td>
-		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
+		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
@@ -293,7 +293,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td rowspan="2">17</td>
 		<td>1</td>
 		<td><img src="misc/images/hs.png" width="48" height="48"></td>
-		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
+		<td><img src="misc/images/more.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
@@ -310,7 +310,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td rowspan="2">18</td>
 		<td>1</td>
 		<td><img src="misc/images/sh.png" width="48" height="48"></td>
-		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
+		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
@@ -318,7 +318,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 	<tr>
 		<td>2</td>
 		<td><img src="misc/images/sh.png" width="48" height="48"></td>
-		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
+		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
