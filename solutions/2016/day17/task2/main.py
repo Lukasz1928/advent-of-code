@@ -56,17 +56,23 @@ def direction(p1, p2):
 def find_shortest_path(start, target, passcode):
     Q = deque()
     Q.append((start, ""))
-    while True:
+    longest = ""
+    while len(Q) > 0:
         vert = Q.popleft()
         loc = vert[0]
         path = vert[1]
+        if not (0 <= loc[0] < 4 and 0 <= loc[1] < 4):
+            continue
         if loc == target:
-            return path
-        doors = doors_open(passcode, path)
-        for d, o in doors.items():
-            if o:
-                ngh = move_location(loc, d)
-                Q.append((ngh, path + d))
+            if len(path) > len(longest):
+                longest = path
+        else:
+            doors = doors_open(passcode, path)
+            for d, o in doors.items():
+                if o:
+                    ngh = move_location(loc, d)
+                    Q.append((ngh, path + d))
+    return longest
 
 
 passcode = read_input()
@@ -75,4 +81,5 @@ start = (0, 0)
 target = (3, 3)
 
 path = find_shortest_path(start, target, passcode)
-print(path)
+length = len(path)
+print(length)
