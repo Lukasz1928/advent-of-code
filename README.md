@@ -199,7 +199,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 	<tr>
 		<td>2</td>
 		<td><img src="misc/images/c.png" width="48" height="48"></td>
-		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
+		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
 		<td><img src="misc/images/delete-sign.png" width="48" height="48"></td>
 		<td><img src="misc/images/py.png" width="48" height="48"></td>
