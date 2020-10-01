@@ -1,3 +1,4 @@
+from collections import deque
 
 
 def read_input():
@@ -7,14 +8,16 @@ def read_input():
 
 elf_count = read_input()
 elfs = list(range(1, elf_count + 1))
-index = 0
-l = len(elfs)
-while l > 1:
-    remove_idx = (index + l // 2) % l
-    index = (index + 1) % l
-    del elfs[remove_idx]
-    l -= 1
-    if l % 1000 == 0:
-        print(l)
-result = elfs[0]
+
+left = deque(elfs[:len(elfs)//2])
+right = deque(elfs[len(elfs)//2:])
+while len(left) + len(right) != 1:
+    first = left.popleft()
+    if len(left) == len(right):
+        left.pop()
+    else:
+        right.popleft()
+    right.append(first)
+    left.append(right.popleft())
+result = (list(left) + list(right))[0]
 print(result)
