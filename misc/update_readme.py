@@ -24,6 +24,7 @@ signs = {
 
 sign_exceptions = {
     (2015, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">',
+    (2016, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">',
     (2017, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">'
 }
 
