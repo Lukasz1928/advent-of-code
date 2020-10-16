@@ -5,43 +5,26 @@ import re
 def task_status(year, day, task, basedir):
     task_path = '{}/solutions/{}/day{}/task{}'.format(basedir, year, str(day).zfill(2), task)
     if not os.path.isdir(task_path):
-        return "notStated"
+        return "unsolved"
     if 'solution' not in os.listdir(task_path):
-        return "inProgress"
+        return "inprogress"
     with open('{}/solution'.format(task_path)) as f:
         if len(f.read()) == 0:
-            return "inProgress"
+            return "inprogress"
     return "solved"
 
-    
-icons_order = ['py', 'java', 'c', 'cpp', 'hs', 'scala', 'kt', 'cs', 'rb', 'clj', 'erl', 'js', 'jl', 'r', 'm', 'fs', 'php', 'dart', 'lua', 'jy', 'go', 'rs', 'asm', 'sh', 'icn']
 
 signs = {
-    'solved': '<img src="misc/images/checkmark.png" width="48" height="48">',
-    'unsolved': '<img src="misc/images/delete-sign.png" width="48" height="48">',
-    'inprogress': '<img src="misc/images/more.png" width="48" height="48">'
+    'solved': '<img src="misc/images/solved.png" width="48" height="48">',
+    'unsolved': '<img src="misc/images/notStarted.png" width="48" height="48">',
+    'inprogress': '<img src="misc/images/inProgress.png" width="48" height="48">'
 }
 
 sign_exceptions = {
-    (2015, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">',
-    (2016, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">',
-    (2017, 25, 2): '<img src="misc/images/checkmark.png" width="48" height="48">'
+    (2015, 25, 2): '<img src="misc/images/solved.png" width="48" height="48">',
+    (2016, 25, 2): '<img src="misc/images/solved.png" width="48" height="48">',
+    (2017, 25, 2): '<img src="misc/images/solved.png" width="48" height="48">'
 }
-
-#  assumes file exists
-def get_solution_language_icon(year, day, task, basedir):
-    try:
-        task_path = '{}/solutions/{}/day{}/task{}'.format(basedir, year, str(day).zfill(2), task)
-        file = [f for f in os.listdir(task_path) if re.match(r'.+\..+', f)][0]
-        ext = file.split('.')[-1].lower()
-    except Exception:
-        return signs['unsolved']
-        
-    available_icons = os.listdir(basedir + '/misc/images')
-    if (ext + '.png') in available_icons:
-        return '<img src="misc/images/{}.png" width="48" height="48">'.format(ext)
-    else:
-        return signs['solved']
 
 
 def task_sign(year, day, task, basedir):
@@ -50,11 +33,7 @@ def task_sign(year, day, task, basedir):
     except KeyError:
         pass # task not in sign_exceptions
     status = task_status(year, day, task, basedir)
-    if status == "notStarted":
-        return signs['unsolved']
-    elif status == "inProgress":
-        return signs['inprogress']
-    return get_solution_language_icon(year, day, task, basedir)
+    return signs[status]
 
 
 def get_years_range(basedir):
@@ -89,34 +68,6 @@ def generate_table_body(basedir):
         table += '\t</tr>\n'
     table += '</tbody>\n'
     return table
-
-def generate_languages_used_list(basedir):
-    lst = "\n**LANGUAGES USED:**<br>\n"
-    tasks_count = 25
-    langs = set()
-    for year in get_years_range(basedir):
-        for task in range(tasks_count):
-            for subtask in range(2):
-                if task_status(year, task + 1, subtask + 1, basedir) == "solved":
-                    langs.add(get_solution_language_icon(year, task + 1, subtask + 1, basedir))
-    try:
-        langs.remove(signs['solved'])
-    except Exception:
-        pass
-    try:
-        langs.remove(signs['unsolved'])
-    except Exception:
-        pass
-    try:
-        langs.remove(signs['inprogress'])
-    except Exception:
-        pass
-    for i, l in enumerate(sorted(list(langs), key=lambda a: icons_order.index(a.split(' ')[1].split('/')[-1][:-5]))):
-        if i > 0 and i % 5 == 0:
-            lst += "<br>\n"
-        lst += l
-    lst += "<br>"
-    return lst
     
 
 def generate_solution_checklist_table(basedir):
@@ -128,7 +79,6 @@ def main():
     wd = os.getcwd()
     basedir = '/'.join(wd.split('\\')[:-1]) if wd.endswith('misc') else wd
     text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.\n"
-    text += generate_languages_used_list(basedir)
     text += generate_solution_checklist_table(basedir)
     text += "\n\n[1]: https://adventofcode.com/\n"
     with open(basedir + '\README.md', 'w+') as f:
