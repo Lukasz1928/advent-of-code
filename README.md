@@ -170,7 +170,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
-		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 	</tr>
 	<tr>
@@ -178,7 +178,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
-		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 	</tr>
 	<tr>
