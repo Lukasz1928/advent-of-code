@@ -8,6 +8,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td>2017</td>
 		<td>2018</td>
 		<td>2019</td>
+		<td>2020</td>
 	</tr>
 </thead>
 <tbody>
@@ -19,6 +20,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/inProgress.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -27,6 +29,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">02</td>
@@ -36,6 +39,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -44,6 +48,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">03</td>
@@ -53,6 +58,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -61,6 +67,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">04</td>
@@ -70,6 +77,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -78,6 +86,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">05</td>
@@ -87,6 +96,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -95,6 +105,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">06</td>
@@ -104,6 +115,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -112,6 +124,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">07</td>
@@ -121,6 +134,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -129,6 +143,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">08</td>
@@ -138,6 +153,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -146,6 +162,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">09</td>
@@ -155,6 +172,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -163,6 +181,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">10</td>
@@ -172,6 +191,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -180,6 +200,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">11</td>
@@ -189,6 +210,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -197,6 +219,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">12</td>
@@ -206,6 +229,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -214,6 +238,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">13</td>
@@ -223,6 +248,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -231,6 +257,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/inProgress.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">14</td>
@@ -240,6 +267,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -248,6 +276,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/inProgress.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">15</td>
@@ -257,12 +286,14 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/inProgress.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
@@ -274,6 +305,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -281,6 +313,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
@@ -291,12 +324,14 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
@@ -308,6 +343,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -315,6 +351,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
@@ -325,6 +362,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -332,6 +370,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
@@ -342,6 +381,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -349,6 +389,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
@@ -359,6 +400,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -366,6 +408,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
@@ -376,6 +419,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -384,6 +428,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/inProgress.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">23</td>
@@ -393,6 +438,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -400,6 +446,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
@@ -410,6 +457,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -418,6 +466,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/inProgress.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">25</td>
@@ -427,12 +476,14 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
+		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
 	</tr>
