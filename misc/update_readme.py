@@ -20,18 +20,15 @@ signs = {
     'inprogress': '<img src="misc/images/inProgress.png" width="48" height="48">'
 }
 
-sign_exceptions = {
-    (2015, 25, 2): '<img src="misc/images/solved.png" width="48" height="48">',
-    (2016, 25, 2): '<img src="misc/images/solved.png" width="48" height="48">',
-    (2017, 25, 2): '<img src="misc/images/solved.png" width="48" height="48">'
-}
+def read_sign_exceptions(basedir):
+    d = basedir + '/misc'
+    with open(d + '/exceptions', 'r') as f:
+        exs = {tuple(int(x) for x in l.strip().split('-')) for l in f}
+    return exs
 
-
-def task_sign(year, day, task, basedir):
-    try:
-        return sign_exceptions[(year, day, task)]
-    except KeyError:
-        pass # task not in sign_exceptions
+def task_sign(year, day, task, basedir, exceptions):
+    if (year, day, task) in exceptions:
+        return signs['solved']
     status = task_status(year, day, task, basedir)
     return signs[status]
 
@@ -49,7 +46,7 @@ def generate_table_header(basedir):
     return thead
 
 
-def generate_table_body(basedir):
+def generate_table_body(basedir, exceptions):
     tasks_count = 25
     years = get_years_range(basedir)
 
@@ -59,27 +56,28 @@ def generate_table_body(basedir):
         table += '\t\t<td rowspan="2">{}</td>\n'.format(str(tid + 1).zfill(2))
         table += "\t\t<td>1</td>\n"
         for year in years:
-            table += '\t\t<td><a href="tree/master/solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 1, task_sign(year, tid + 1, 1, basedir))
+            table += '\t\t<td><a href="solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 1, task_sign(year, tid + 1, 1, basedir, exceptions))
         table += '\t</tr>\n'
         table += '\t<tr>\n'
         table += '\t\t<td>2</td>\n'
         for year in years:
-            table += '\t\t<td><a href="tree/master/solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 2, task_sign(year, tid + 1, 2, basedir))
+            table += '\t\t<td><a href="solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 2, task_sign(year, tid + 1, 2, basedir, exceptions))
         table += '\t</tr>\n'
     table += '</tbody>\n'
     return table
     
 
-def generate_solution_checklist_table(basedir):
-    table = '<table>\n{}{}</table>'.format(generate_table_header(basedir), generate_table_body(basedir))
+def generate_solution_checklist_table(basedir, exceptions):
+    table = '<table>\n{}{}</table>'.format(generate_table_header(basedir), generate_table_body(basedir, exceptions))
     return table
 
 
 def main():
     wd = os.getcwd()
     basedir = '/'.join(wd.split('\\')[:-1]) if wd.endswith('misc') else wd
+    sign_exceptions = read_sign_exceptions(basedir)
     text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.\n"
-    text += generate_solution_checklist_table(basedir)
+    text += generate_solution_checklist_table(basedir, sign_exceptions)
     text += "\n\n[1]: https://adventofcode.com/\n"
     with open(basedir + '\README.md', 'w+') as f:
         f.write(text)
