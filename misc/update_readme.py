@@ -6,6 +6,9 @@ def task_status(year, day, task, basedir):
     task_path = '{}/solutions/{}/day{}/task{}'.format(basedir, year, str(day).zfill(2), task)
     if not os.path.isdir(task_path):
         return "unsolved"
+    files = os.listdir(task_path)
+    if len(files) == 1 and files[0] == '.gitkeep':
+        return "unsolved"
     if 'solution' not in os.listdir(task_path):
         return "inprogress"
     with open('{}/solution'.format(task_path)) as f:
@@ -34,8 +37,7 @@ def task_sign(year, day, task, basedir, exceptions):
 
 
 def get_years_range(basedir):
-    dir_content = [int(f) for f in os.listdir(basedir + '/solutions') if f.isnumeric()]
-    return range(min(dir_content), max(dir_content) + 1)
+    return [int(f) for f in os.listdir(basedir + '/solutions') if f.isnumeric()]
 
 
 def generate_table_header(basedir):
