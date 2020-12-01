@@ -13,7 +13,7 @@ def in_set(value, values):
 
 
 expenses_report = read_input()
-entries_count = 2
+entries_count = 3
 
 solver = z3.Solver()
 entries = [z3.Int(f'e{i}') for i in range(entries_count)]

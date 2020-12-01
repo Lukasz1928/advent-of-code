@@ -20,7 +20,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
-		<td><img src="misc/images/inProgress.png" width="48" height="48"></td>
+		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -29,7 +29,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 		<td><img src="misc/images/solved.png" width="48" height="48"></td>
-		<td><img src="misc/images/notStarted.png" width="48" height="48"></td>
+		<td><img src="misc/images/solved.png" width="48" height="48"></td>
 	</tr>
 	<tr>
 		<td rowspan="2">02</td>
