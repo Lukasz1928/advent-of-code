@@ -59,12 +59,12 @@ def generate_table_body(basedir):
         table += '\t\t<td rowspan="2">{}</td>\n'.format(str(tid + 1).zfill(2))
         table += "\t\t<td>1</td>\n"
         for year in years:
-            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 1, basedir))
+            table += '\t\t<td><a href="tree/master/solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 1, task_sign(year, tid + 1, 1, basedir))
         table += '\t</tr>\n'
         table += '\t<tr>\n'
         table += '\t\t<td>2</td>\n'
         for year in years:
-            table += '\t\t<td>{}</td>\n'.format(task_sign(year, tid + 1, 2, basedir))
+            table += '\t\t<td><a href="tree/master/solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 2, task_sign(year, tid + 1, 2, basedir))
         table += '\t</tr>\n'
     table += '</tbody>\n'
     return table
