@@ -18,9 +18,9 @@ def task_status(year, day, task, basedir):
 
 
 signs = {
-    'solved': '<img src="misc/images/solved.png" width="48" height="48">',
-    'unsolved': '<img src="misc/images/notStarted.png" width="48" height="48">',
-    'inprogress': '<img src="misc/images/inProgress.png" width="48" height="48">'
+    'solved': '<img src="misc/images/solved.png" width="20" height="20">',
+    'unsolved': '<img src="misc/images/notStarted.png" width="20" height="20">',
+    'inprogress': '<img src="misc/images/inProgress.png" width="20" height="20">'
 }
 
 def read_sign_exceptions(basedir):
@@ -41,7 +41,7 @@ def get_years_range(basedir):
 
 
 def generate_table_header(basedir):
-    thead = '<thead>\n\t<tr>\n\t\t<td colspan="2">Task\\Year</td>\n'
+    thead = '<thead>\n\t<tr>\n\t\t<td></td>\n'
     for year in get_years_range(basedir):
         thead += '\t\t<td>{}</td>\n'.format(year)
     thead += '\t</tr>\n</thead>\n'
@@ -55,15 +55,9 @@ def generate_table_body(basedir, exceptions):
     table = '<tbody>\n'
     for tid in range(tasks_count):
         table += '\t<tr>\n'
-        table += '\t\t<td rowspan="2">{}</td>\n'.format(str(tid + 1).zfill(2))
-        table += "\t\t<td>1</td>\n"
+        table += '\t\t<td>day {}</td>\n'.format(str(tid + 1).zfill(2))
         for year in years:
-            table += '\t\t<td><a href="solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 1, task_sign(year, tid + 1, 1, basedir, exceptions))
-        table += '\t</tr>\n'
-        table += '\t<tr>\n'
-        table += '\t\t<td>2</td>\n'
-        for year in years:
-            table += '\t\t<td><a href="solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 2, task_sign(year, tid + 1, 2, basedir, exceptions))
+            table += '\t\t<td><a href="solutions/{}/day{}/task{}">{}</a><a href="solutions/{}/day{}/task{}">{}</a></td>\n'.format(year, str(tid + 1).zfill(2), 1, task_sign(year, tid + 1, 1, basedir, exceptions), year, str(tid + 1).zfill(2), 2, task_sign(year, tid + 1, 2, basedir, exceptions))
         table += '\t</tr>\n'
     table += '</tbody>\n'
     return table
