@@ -161,7 +161,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><a href="solutions/2015/day17/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2015/day17/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2016/day17/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2016/day17/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2017/day17/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2017/day17/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
-		<td><a href="solutions/2018/day17/task1"><img src="misc/images/inProgress.png" width="20" height="20"></a><a href="solutions/2018/day17/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
+		<td><a href="solutions/2018/day17/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2018/day17/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2019/day17/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2019/day17/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2020/day17/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2020/day17/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
 	</tr>

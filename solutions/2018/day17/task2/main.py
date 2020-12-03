@@ -223,4 +223,6 @@ while True:
     if w == wet:
         break
     wet = w
-print(wet)
+
+result = len([n for n in graph.nodes.values() if n.wetness == 'water'])
+print(result)
