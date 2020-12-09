@@ -91,7 +91,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><a href="solutions/2017/day09/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2017/day09/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2018/day09/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2018/day09/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2019/day09/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2019/day09/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
-		<td><a href="solutions/2020/day09/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2020/day09/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
+		<td><a href="solutions/2020/day09/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2020/day09/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 	</tr>
 	<tr>
 		<td>day 10</td>
