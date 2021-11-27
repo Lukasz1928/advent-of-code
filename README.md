@@ -190,7 +190,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><a href="solutions/2017/day20/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2017/day20/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2018/day20/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2018/day20/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2019/day20/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2019/day20/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
-		<td><a href="solutions/2020/day20/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2020/day20/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
+		<td><a href="solutions/2020/day20/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2020/day20/task2"><img src="misc/images/inProgress.png" width="20" height="20"></a></td>
 	</tr>
 	<tr>
 		<td>day 21</td>
@@ -208,7 +208,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><a href="solutions/2017/day22/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2017/day22/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2018/day22/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2018/day22/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2019/day22/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2019/day22/task2"><img src="misc/images/inProgress.png" width="20" height="20"></a></td>
-		<td><a href="solutions/2020/day22/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2020/day22/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
+		<td><a href="solutions/2020/day22/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2020/day22/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
 	</tr>
 	<tr>
 		<td>day 23</td>
@@ -226,7 +226,7 @@ Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
 		<td><a href="solutions/2017/day24/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2017/day24/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2018/day24/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2018/day24/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2019/day24/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2019/day24/task2"><img src="misc/images/inProgress.png" width="20" height="20"></a></td>
-		<td><a href="solutions/2020/day24/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2020/day24/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
+		<td><a href="solutions/2020/day24/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2020/day24/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 	</tr>
 	<tr>
 		<td>day 25</td>
