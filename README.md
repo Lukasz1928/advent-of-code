@@ -1,4 +1,4 @@
-Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.
+![](https://img.shields.io/badge/stars⭐-265/350-yellow)
 <table>
 <thead>
 	<tr>

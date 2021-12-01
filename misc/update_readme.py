@@ -1,8 +1,21 @@
 import os
 import re
 
+def get_years_range(basedir):
+    return [int(f) for f in os.listdir(basedir + '/solutions') if f.isnumeric()]
 
-def task_status(year, day, task, basedir):
+
+tasks_per_year = 25
+signs = {
+    'solved': '<img src="misc/images/solved.png" width="20" height="20">',
+    'unsolved': '<img src="misc/images/notStarted.png" width="20" height="20">',
+    'inprogress': '<img src="misc/images/inProgress.png" width="20" height="20">'
+}
+
+
+def task_status(year, day, task, basedir, exceptions):
+    if (year, day, task) in exceptions:
+        return "solved"
     task_path = '{}/solutions/{}/day{}/task{}'.format(basedir, year, str(day).zfill(2), task)
     if not os.path.isdir(task_path):
         return "unsolved"
@@ -17,27 +30,15 @@ def task_status(year, day, task, basedir):
     return "solved"
 
 
-signs = {
-    'solved': '<img src="misc/images/solved.png" width="20" height="20">',
-    'unsolved': '<img src="misc/images/notStarted.png" width="20" height="20">',
-    'inprogress': '<img src="misc/images/inProgress.png" width="20" height="20">'
-}
-
 def read_sign_exceptions(basedir):
     d = basedir + '/misc'
     with open(d + '/exceptions', 'r') as f:
         exs = {tuple(int(x) for x in l.strip().split('-')) for l in f}
     return exs
 
+
 def task_sign(year, day, task, basedir, exceptions):
-    if (year, day, task) in exceptions:
-        return signs['solved']
-    status = task_status(year, day, task, basedir)
-    return signs[status]
-
-
-def get_years_range(basedir):
-    return [int(f) for f in os.listdir(basedir + '/solutions') if f.isnumeric()]
+    return signs[task_status(year, day, task, basedir, exceptions)]
 
 
 def generate_table_header(basedir):
@@ -49,11 +50,9 @@ def generate_table_header(basedir):
 
 
 def generate_table_body(basedir, exceptions):
-    tasks_count = 25
     years = get_years_range(basedir)
-
     table = '<tbody>\n'
-    for tid in range(tasks_count):
+    for tid in range(tasks_per_year):
         table += '\t<tr>\n'
         table += '\t\t<td>day {}</td>\n'.format(str(tid + 1).zfill(2))
         for year in years:
@@ -68,14 +67,31 @@ def generate_solution_checklist_table(basedir, exceptions):
     return table
 
 
+def count_tasks(basedir, exceptions):
+    years = get_years_range(basedir)
+    solved = 0
+    all_tasks = len(years) * tasks_per_year * 2
+    for year in years:
+        for task in range(tasks_per_year):
+            for subtask in {1, 2}:
+                if task_status(year, task, subtask, basedir, exceptions) == "solved":
+                    solved += 1
+    return solved, all_tasks
+
+
+def generate_stars_badge(basedir, exceptions):
+    solved_cnt, all_cnt = count_tasks(basedir, exceptions)
+    return f"![](https://img.shields.io/badge/stars\u2b50-{solved_cnt}/{all_cnt}-yellow)\n"
+
+
 def main():
     wd = os.getcwd()
     basedir = '/'.join(wd.split('\\')[:-1]) if wd.endswith('misc') else wd
     sign_exceptions = read_sign_exceptions(basedir)
-    text = "Solutions  of <cite>[Advent of Code][1]</cite> programming tasks.\n"
+    text = generate_stars_badge(basedir, sign_exceptions)
     text += generate_solution_checklist_table(basedir, sign_exceptions)
-    text += "\n\n[1]: https://adventofcode.com/\n"
-    with open(basedir + '\README.md', 'w+') as f:
+    text = text.encode('utf-8')
+    with open(basedir + '\README.md', 'wb+') as f:
         f.write(text)
 
 
