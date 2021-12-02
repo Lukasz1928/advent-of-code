@@ -2,7 +2,7 @@ import os
 import re
 
 def get_years_range(basedir):
-    return [int(f) for f in os.listdir(basedir + '/solutions') if f.isnumeric()]
+    return list(sorted([int(f) for f in os.listdir(basedir + '/solutions') if f.isnumeric()]))
 
 
 tasks_per_year = 25
@@ -87,11 +87,13 @@ def generate_stars_badge(basedir, exceptions):
 def main():
     wd = os.getcwd()
     basedir = '/'.join(wd.split('\\')[:-1]) if wd.endswith('misc') else wd
+    print(basedir)
     sign_exceptions = read_sign_exceptions(basedir)
     text = generate_stars_badge(basedir, sign_exceptions)
     text += generate_solution_checklist_table(basedir, sign_exceptions)
+    print(text)
     text = text.encode('utf-8')
-    with open(basedir + '\README.md', 'wb+') as f:
+    with open(os.path.join(basedir, 'README.md'), 'wb') as f:
         f.write(text)
 
 

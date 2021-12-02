@@ -1,0 +1,20 @@
+name: readme-update
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run update script
+        run: python ./misc/update_readme.py
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update readme
+          file_pattern: README.md
+          commit_user_name: ${{ secrets.COMMIT_AUTHOR }}
+          commit_user_email: ${{ secrets.COMMIT_AUTHOR_EMAIL }}
