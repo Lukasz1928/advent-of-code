@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/stars⭐-265/350-yellow)
+![](https://img.shields.io/badge/stars⭐-267/350-yellow)
 <table>
 <thead>
 	<tr>
@@ -31,7 +31,7 @@
 		<td><a href="solutions/2018/day02/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2018/day02/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2019/day02/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2019/day02/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2020/day02/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2020/day02/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
-		<td><a href="solutions/2021/day02/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2021/day02/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
+		<td><a href="solutions/2021/day02/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2021/day02/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 	</tr>
 	<tr>
 		<td>day 03</td>
@@ -265,5 +265,3 @@
 	</tr>
 </tbody>
 </table>
-
-[1]: https://adventofcode.com/
