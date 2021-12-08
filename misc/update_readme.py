@@ -74,7 +74,7 @@ def count_tasks(basedir, exceptions):
     for year in years:
         for task in range(tasks_per_year):
             for subtask in {1, 2}:
-                if task_status(year, task, subtask, basedir, exceptions) == "solved":
+                if task_status(year, task + 1, subtask, basedir, exceptions) == "solved":
                     solved += 1
     return solved, all_tasks
 
