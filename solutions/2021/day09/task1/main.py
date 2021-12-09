@@ -6,7 +6,7 @@ def read_input():
 
 def add_border(data):
     width = len(data[0])
-    return [[10] * (width + 2)] + [[10, *line, 10] for line in data] + [[10] * (width + 2)]
+    return [[9] * (width + 2)] + [[9, *line, 9] for line in data] + [[9] * (width + 2)]
 
 
 raw_input = read_input()
