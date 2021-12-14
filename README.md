@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/stars⭐-300/350-yellow)
+![](https://img.shields.io/badge/stars⭐-302/350-yellow)
 <table>
 <thead>
 	<tr>
@@ -151,7 +151,7 @@
 		<td><a href="solutions/2018/day14/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2018/day14/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2019/day14/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2019/day14/task2"><img src="misc/images/inProgress.png" width="20" height="20"></a></td>
 		<td><a href="solutions/2020/day14/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2020/day14/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
-		<td><a href="solutions/2021/day14/task1"><img src="misc/images/notStarted.png" width="20" height="20"></a><a href="solutions/2021/day14/task2"><img src="misc/images/notStarted.png" width="20" height="20"></a></td>
+		<td><a href="solutions/2021/day14/task1"><img src="misc/images/solved.png" width="20" height="20"></a><a href="solutions/2021/day14/task2"><img src="misc/images/solved.png" width="20" height="20"></a></td>
 	</tr>
 	<tr>
 		<td>day 15</td>
