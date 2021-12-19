@@ -1,5 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
+from functools import reduce
 from typing import Union, List, Tuple
 
 
@@ -30,10 +31,23 @@ class Packet:
     type: int
     val: Union[int, List[Packet]]
 
-    def sum_versions(self) -> int:
+    def value(self) -> int:
+        if self.type == 0:
+            return sum(v.value() for v in self.val)
+        if self.type == 1:
+            return reduce(lambda agg, v: agg * v.value(), self.val, 1)
+        if self.type == 2:
+            return min([v.value() for v in self.val])
+        if self.type == 3:
+            return max([v.value() for v in self.val])
         if self.type == 4:
-            return self.version
-        return sum([v.sum_versions() for v in self.val]) + self.version
+            return self.val
+        if self.type == 5:
+            return int(self.val[0].value() > self.val[1].value())
+        if self.type == 6:
+            return int(self.val[0].value() < self.val[1].value())
+        if self.type == 7:
+            return int(self.val[0].value() == self.val[1].value())
 
     @staticmethod
     def from_str(s: str, max_count: int = None) -> Tuple[List[Packet], str]:
@@ -66,5 +80,5 @@ class Packet:
 
 bin_data = to_bin(read_input())
 packets, _ = Packet.from_str(bin_data)
-result = sum(p.sum_versions() for p in packets)
+result = packets[0].value()
 print(result)
